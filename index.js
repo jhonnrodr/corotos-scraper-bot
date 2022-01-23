@@ -43,6 +43,7 @@ function checkForUpdate(url) {
         })
     }).catch((error) => {
         console.log(error)
+        notifyError(error)
     })
 }
 
@@ -58,8 +59,14 @@ function notifyItem(item){
     })
 }
 
-function notifyError(error) {
-
+function notifyError(errors) {
+    DB.getAllTelegramData(function(error, telegram)
+    {
+        telegram.forEach(function(elem, i){
+            bot.reply(telegram[i].telegram_id).text('Un error acaba de ocurrir')
+            bot.reply(telegram[i].telegram_id).text(errors)
+        })
+    })
 }
 
 function subscribe(chatId){
