@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
+    "botgram": "^2.2.0",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sqlite3": "^5.0.2"
   }
 }
