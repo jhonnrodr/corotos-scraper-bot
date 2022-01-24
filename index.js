@@ -14,6 +14,10 @@ bot.command("start", function (msg, reply, next) {
     subscribe(msg.chat.id)
     reply.text("Welcome to the bot, this bot to notify you about new listings")
 });
+bot.command("run", function (msg, reply, next) {
+    reply.text("Running check")
+    runCheck
+});
 
 bot.command("test", function (msg, reply, next) {
     let template = `<b>Titulo: `+'Alquilo Apartamento amueblado en Los Cacicazgos. Cerca del Dominican Fiesta'+`</b>
