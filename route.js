@@ -6,7 +6,4 @@ module.exports = function(app)
         DB.createTable();
         response.send('Tabla creada satisfactoriamente')
     });
-    app.get('/', function(request, response) {
-        response.send('Testing Routes')
-    });
 }
