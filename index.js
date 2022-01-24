@@ -15,8 +15,8 @@ bot.command("start", function (msg, reply, next) {
     reply.text("Welcome to the bot, this bot to notify you about new listings")
 });
 bot.command("run", function (msg, reply, next) {
-    reply.text("Running check")
     runCheck()
+    reply.text("Running check")
 });
 
 bot.command("test", function (msg, reply, next) {
