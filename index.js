@@ -16,7 +16,7 @@ bot.command("start", function (msg, reply, next) {
 });
 bot.command("run", function (msg, reply, next) {
     reply.text("Running check")
-    runCheck
+    runCheck()
 });
 
 bot.command("test", function (msg, reply, next) {
