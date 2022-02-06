@@ -8,7 +8,7 @@ const DB = require('./model.js');
 
 const app = express()
 const route = require('./route.js')(app);
-app.listen(3000, () => console.log(' app listening on port 3000!'))
+app.listen(process.env.PORT || 3000, () => console.log(' app listening on port 3000!'));
 
 bot.command("start", function (msg, reply, next) {
     subscribe(msg.chat.id)
